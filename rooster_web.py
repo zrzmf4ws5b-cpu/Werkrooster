@@ -17,7 +17,7 @@ if st.session_state.pagina == "start":
     if st.button("Verder"):
         st.session_state.pagina = "login"
         st.rerun()     
-elif st.session_state.pagina == "login":  
+elif st.session_state.pagina == "login": 
     st.subheader("🔐 Login")
     gebruikersnaam = st.text_input(
         "Gebruikersnaam"
