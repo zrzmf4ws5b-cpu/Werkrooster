@@ -119,10 +119,11 @@ elif st.session_state.pagina == "rooster":
         "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
         unsafe_allow_html=True
     )
-    st.markdown(
-    "<div style='background-color:#4A86E8; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Maandag</div>",
-    unsafe_allow_html=True
-    )    
+    if st.button("🟦 Maandag"):
+        st.session_state.dag = "Maandag"
+        st.session_state.pagina = "dagdetail"
+        st.rerun()
+    
 
     st.markdown(
     "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Dinsdag</div>",
@@ -143,3 +144,16 @@ elif st.session_state.pagina == "rooster":
     "<div style='background-color:#9B59B6; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Vrijdag</div>",
     unsafe_allow_html=True
 )
+elif st.session_state.pagina == "dagdetail":
+
+    st.markdown(
+        f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.write("Diensttijd")
+    st.write("Locatie: Amstel 1")
+
+    if st.button("🔙 Terug"):
+        st.session_state.pagina = "rooster"
+        st.rerun()
