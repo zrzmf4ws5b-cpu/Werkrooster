@@ -11,9 +11,7 @@ if st.session_state.pagina == "start":
         "<h1 style='text-align:center;color:gold;'>WerkRooster</h1>",
         unsafe_allow_html=True
     )  
-    st.write("")
-    
-    st.image("logo.png", width=300) 
+    st.write("") 
     if st.button("Verder"):
         st.session_state.pagina = "login"
         st.rerun()     
