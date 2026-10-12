@@ -12,6 +12,7 @@ if st.session_state.pagina == "start":
         unsafe_allow_html=True
     )  
     st.write("")
+    st.image("logo.png", width=300)
     if st.button("Verder"):
         st.session_state.pagina = "login"
         st.rerun()     
