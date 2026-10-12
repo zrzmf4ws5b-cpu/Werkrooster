@@ -84,17 +84,7 @@ elif st.session_state.pagina == "login":
             st.session_state.pagina = "welkom"
             st.rerun()
         
-            )
-            medewerker = rooster.loc[
-                rooster["Naam"] == gebruikersnaam
-            ]
-            st.subheader("📅 Mijn rooster")
-        
-            st.write(f"Maandag: {medewerker.iloc[0]['Maandag']}")
-            st.write(f"Dinsdag: {medewerker.iloc[0]['Dinsdag']}")
-            st.write(f"Woensdag: {medewerker.iloc[0]['Woensdag']}")
-            st.write(f"Donderdag: {medewerker.iloc[0]['Donderdag']}")
-            st.write(f"Vrijdag: {medewerker.iloc[0]['Vrijdag']}")
+           
         else:
             st.error(
                 "Onjuiste gebruikersnaam of wachtwoord"
