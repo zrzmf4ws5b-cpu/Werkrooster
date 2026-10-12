@@ -10,7 +10,7 @@ st.markdown("""
     background-color: #1f3b66;
 }
 </style>
-""", unsafe_allow_html=700)
+""", unsafe_allow_html=True)
 if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
 if st.session_state.pagina == "start":   
@@ -22,7 +22,7 @@ if st.session_state.pagina == "start":
     st.write("")
     st.write("")
     
-    st.image("logo.png", width=True)
+    st.image("logo.png", width=700)
     st.write("")
     st.write("") 
     st.write("")
