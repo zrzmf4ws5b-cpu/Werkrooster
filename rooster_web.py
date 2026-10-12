@@ -26,8 +26,9 @@ div.stButton > button {
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
-    height: 60px;
-    width: 220px;
+    height: 40px;
+    width: 140px;
+    font-size: 14px;
 }
 </style>
 """, unsafe_allow_html=True)
