@@ -4,6 +4,10 @@ st.set_page_config(
     page_title="WerkRooster",
     page_icon="📅"
 )
+st.markdown(
+    "<h1 style='text-align:center;color:gold;'>🔐 Login</h1>",
+    unsafe_allow_html=True
+)
 st.markdown("""
 <style>
 .stApp {
