@@ -36,7 +36,11 @@ if st.session_state.pagina == "start":
         st.session_state.pagina = "login"
         st.rerun()     
 elif st.session_state.pagina == "login": 
-    st.subheader("🔐 Login")
+
+    st.markdown(
+    "<h1 style='text-align:center;color:gold;'>🔐 Login</h1>",
+    unsafe_allow_html=True
+    )
     gebruikersnaam = st.text_input(
         "Gebruikersnaam"
     )
