@@ -90,7 +90,10 @@ elif st.session_state.pagina == "login":
                 "Onjuiste gebruikersnaam of wachtwoord"
             )
 elif st.session_state.pagina == "welkom":
-
+st.markdown(
+    f"<h1 style='text-align:center;color:gold;'>👋 Welkom {st.session_state.gebruiker}</h1>",
+    unsafe_allow_html=True
+)
     st.markdown(
     f"<h1 style='text-align:center;color:gold;'>👋 Welkom {st.session_state.gebruiker}</h1>",
     unsafe_allow_html=True
