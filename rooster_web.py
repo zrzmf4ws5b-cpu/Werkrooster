@@ -110,11 +110,26 @@ elif st.session_state.pagina == "welkom":
          if st.button("🚪 Afmelden"):
              st.session_state.pagina = "login"
              st.rerun()
-         elif st.session_state.pagina == "rooster":
+          if st.session_state.pagina == "start":
+    ...
 
-              st.markdown(
-                  "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
-                  unsafe_allow_html=True
-              )
+elif st.session_state.pagina == "login":
+    ...
 
-              st.write("Hier komt straks het rooster.")   
+elif st.session_state.pagina == "welkom":
+    ...
+
+elif st.session_state.pagina == "rooster":
+
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
+        unsafe_allow_html=True
+    )
+st.write("")
+
+st.info("Maandag")
+st.success("Dinsdag")
+st.warning("Woensdag")
+st.error("Donderdag")
+st.info("Vrijdag"
+    
