@@ -11,6 +11,20 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+div.stButton > button {
+    background-color: gold;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 60px;
+}
+</style>
+""", unsafe_allow_html=True)
+
 if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
 if st.session_state.pagina == "start":   
