@@ -11,9 +11,9 @@ if st.session_state.pagina == "start":
         "<h1 style='text-align:center;color:gold;'>WerkRooster</h1>",
         unsafe_allow_html=True
     )  
-    st.image("logo.png", use_container_ width=Treu)
+    st.image("logo.png", use_container_ width=True)
     st.write("")
-    st.write("")
+    st.write("") 
     st.write("")
     st.write("")
     st.write("")
