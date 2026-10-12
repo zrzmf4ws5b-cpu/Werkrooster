@@ -122,9 +122,9 @@ elif st.session_state.pagina == "rooster":
 
 
     if st.button("🟦 Maandag"):
-    st.session_state.dag = "Maandag"
-    st.session_state.pagina = "dagdetail"
-    st.rerun()
+        st.session_state.dag = "Maandag"
+        st.session_state.pagina = "dagdetail"
+        st.rerun()
     
     st.markdown(
     "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Dinsdag</div>",
