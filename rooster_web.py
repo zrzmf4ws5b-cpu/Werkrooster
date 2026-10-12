@@ -173,6 +173,11 @@ elif st.session_state.pagina == "dagdetail":
     "<div style='background-color:#F39C12;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>👥 Collega's<br>Piet<br>Klaas<br>Marie<br>Ahmed</div>",
     unsafe_allow_html=True
     )
+    st.write("")
+    st.write("")
+    st.write("")
+
+    
     col1, col2, col3 = st.columns([3,1,3])
 
     with col2:
