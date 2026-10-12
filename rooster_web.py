@@ -159,18 +159,33 @@ elif st.session_state.pagina == "rooster":
         st.session_state.pagina = "dagdetail"
 
         st.rerun()
-    
-
     st.markdown(
-    "<div style='background-color:#E74C3C; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Donderdag</div>",
+    "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Donderdag</div>",
     unsafe_allow_html=True
     )
 
+    if st.button("Open Donderdag"):
+
+        st.session_state.dag = "Donderdag"
+
+        st.session_state.pagina = "dagdetail"
+
+        st.rerun()
+
     st.markdown(
-    "<div style='background-color:#9B59B6; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Vrijdag</div>",
+    "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Vrijdag</div>",
     unsafe_allow_html=True
     )
+
+    if st.button("Open Vrijdag"):
+
+        st.session_state.dag = "Vrijdag"
+
+        st.session_state.pagina = "dagdetail"
+
+        st.rerun()
     
+  
 elif st.session_state.pagina == "dagdetail":
 
     st.markdown(
