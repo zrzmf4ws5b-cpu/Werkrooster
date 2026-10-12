@@ -137,7 +137,7 @@ elif st.session_state.pagina == "rooster":
     "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Dinsdag</div>",
     unsafe_allow_html=True
     )
-     if st.button("Open Dinsdag"):
+    if st.button("Open Dinsdag"):
 
         st.session_state.dag = "Dinsdag"
 
