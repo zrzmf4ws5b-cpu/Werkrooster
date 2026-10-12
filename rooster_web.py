@@ -10,10 +10,17 @@ if st.session_state.pagina == "start":
     st.markdown(
         "<h1 style='text-align:center;color:gold;'>WerkRooster</h1>",
         unsafe_allow_html=True
-    )  
-    st.image("logo.png", use_container_width=True)
+    )
+    st.write("")
+    st.write("")
+    st.write("")
+    
+    st.image("logo.png", use_container_width=700)
     st.write("")
     st.write("") 
+    st.write("")
+    st.write("")
+    st.write("")
     st.write("")
     st.write("")
     st.write("")
