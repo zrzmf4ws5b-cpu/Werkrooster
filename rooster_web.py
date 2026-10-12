@@ -11,7 +11,7 @@ st.markdown("""
 }
 
 label {
-    color: white !important;
+    color: gold !important;
     font-size: 20px !important;
     font-weight: bold !important;
 }
