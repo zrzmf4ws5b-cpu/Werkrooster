@@ -121,7 +121,7 @@ elif st.session_state.pagina == "rooster":
     )
     
     st.markdown(
-    "&lt;div style='background-color:#4A86E8; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'&gt;Maandag&lt;/div&gt;",
+    "<div style='background-color:#4A86E8; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'&gt;Maandag&lt;/div&gt;",
     unsafe_allow_html=True
     )
    
