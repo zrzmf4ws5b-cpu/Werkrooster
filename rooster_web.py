@@ -127,19 +127,19 @@ elif st.session_state.pagina == "rooster":
     st.markdown(
     "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Dinsdag</div>",
     unsafe_allow_html=True
-)
+    )
 
-st.markdown(
+    st.markdown(
     "<div style='background-color:#F39C12; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Woensdag</div>",
     unsafe_allow_html=True
-)
+    )
 
-st.markdown(
+    st.markdown(
     "<div style='background-color:#E74C3C; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Donderdag</div>",
     unsafe_allow_html=True
-)
+    )
 
-st.markdown(
+    st.markdown(
     "<div style='background-color:#9B59B6; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Vrijdag</div>",
     unsafe_allow_html=True
 )
