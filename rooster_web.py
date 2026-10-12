@@ -77,13 +77,13 @@ elif st.session_state.pagina == "login":
             (gebruikers["Naam"] == gebruikersnaam) &
             (gebruikers["Wachtwoord"] == wachtwoord)
         ]
+
         if not gebruiker.empty:
-            st.success(
-                f"Welkom {gebruikersnaam}"
-            )            
-            rooster = pd.read_excel(
-                "rooster.xlsx",
-                sheet_name="Rooster"
+
+            st.session_state.gebruiker = gebruikersnaam
+            st.session_state.pagina = "welkom"
+            st.rerun()
+        
             )
             medewerker = rooster.loc[
                 rooster["Naam"] == gebruikersnaam
@@ -99,4 +99,20 @@ elif st.session_state.pagina == "login":
             st.error(
                 "Onjuiste gebruikersnaam of wachtwoord"
             )
+elif st.session_state.pagina == "welkom":
 
+    st.markdown(
+        f"<h1 style='text-align:center;color:gold;'>👋 Welkom {st.session_state.gebruiker}</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.write("")
+    st.write("Kies hieronder een actie")
+
+    if st.button("📅 Mijn rooster"):
+        st.session_state.pagina = "rooster"
+        st.rerun()
+
+    if st.button("🚪 Afmelden"):
+        st.session_state.pagina = "login"
+        st.rerun()
