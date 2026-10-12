@@ -156,9 +156,19 @@ elif st.session_state.pagina == "dagdetail":
         unsafe_allow_html=True
     )
 
-    st.write("Diensttijd")
-    st.write("Locatie: Amstel 1")
+    st.markdown(
+    "<div style='background-color:#4A86E8;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>🕒 Dienst<br>06:30</div>",
+    unsafe_allow_html=True
+    )
 
+    st.write("")
+
+    st.markdown(
+    "<div style='background-color:#2ECC71;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>📍 Locatie<br>Amstel 1</div>",
+    unsafe_allow_html=True
+    )
+
+    
     if st.button("🔙 Terug"):
         st.session_state.pagina = "rooster"
         st.rerun()
