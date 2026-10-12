@@ -125,5 +125,5 @@ st.info("Maandag")
 st.success("Dinsdag")
 st.warning("Woensdag")
 st.error("Donderdag")
-st.info("Vrijdag"
+st.info("Vrijdag")
     
