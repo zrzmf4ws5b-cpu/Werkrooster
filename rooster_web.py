@@ -167,7 +167,12 @@ elif st.session_state.pagina == "dagdetail":
     "<div style='background-color:#2ECC71;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>📍 Locatie<br>Amstel 1</div>",
     unsafe_allow_html=True
     )
+    st.write("")
 
+    st.markdown(
+    "<div style='background-color:#F39C12;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>👥 Collega's<br>Piet<br>Klaas<br>Marie<br>Ahmed</div>",
+    unsafe_allow_html=True
+    )
     
     if st.button("🔙 Terug"):
         st.session_state.pagina = "rooster"
