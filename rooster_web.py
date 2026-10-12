@@ -9,6 +9,12 @@ st.markdown("""
 .stApp {
     background-color: #1f3b66;
 }
+
+label {
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
