@@ -144,6 +144,11 @@ elif st.session_state.pagina == "rooster":
     "<div style='background-color:#9B59B6; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Vrijdag</div>",
     unsafe_allow_html=True
     )
+    if st.button("Test Maandag Detail"):
+        st.session_state.dag = "Maandag"
+        st.session_state.pagina = "dagdetail"
+        st.rerun()
+
 elif st.session_state.pagina == "dagdetail":
 
     st.markdown(
