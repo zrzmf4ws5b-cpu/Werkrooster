@@ -25,7 +25,6 @@ elif st.session_state.pagina == "login":
          type="password"
     )
     if st.button("Inloggen"):
- 
         gebruikers = pd.read_excel(
             "rooster.xlsx",
             sheet_name="Gebruikers"
