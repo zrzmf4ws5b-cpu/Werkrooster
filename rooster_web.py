@@ -10,7 +10,7 @@ st.markdown("""
     background-color: #1f3b66;
 }
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=700)
 if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
 if st.session_state.pagina == "start":   
