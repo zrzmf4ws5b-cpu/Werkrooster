@@ -98,7 +98,7 @@ elif st.session_state.pagina == "welkom":
     st.markdown(
         "<h3 style='text-align:center;color:white;'>Kies hieronder een actie</h3>",
         unsafe_allow_html=True
-     )
+    )
     col1, col2, col3 = st.columns([1,2,1])
 
     with col2:
