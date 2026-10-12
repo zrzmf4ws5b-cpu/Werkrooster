@@ -119,11 +119,11 @@ elif st.session_state.pagina == "rooster":
         "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
         unsafe_allow_html=True
     )
-st.write("")
+    st.write("")
 
-st.info("Maandag")
-st.success("Dinsdag")
-st.warning("Woensdag")
-st.error("Donderdag")
-st.info("Vrijdag")
+    st.info("Maandag")
+    st.success("Dinsdag")
+    st.warning("Woensdag")
+    st.error("Donderdag")
+    st.info("Vrijdag")
     
