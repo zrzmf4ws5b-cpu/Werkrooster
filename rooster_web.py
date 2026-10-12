@@ -93,21 +93,23 @@ elif st.session_state.pagina == "login":
 elif st.session_state.pagina == "welkom":
 
     st.markdown(
-        f"<h1 style='text-align:center;color:gold;'>👋 Welkom {st.session_state.gebruiker}</h1>",
+        f"<h1 style='text-align:center;color:gold;'>👋 Welkom
+{st.session_state.gebruiker}</h1>",
         unsafe_allow_html=True
     )
     st.markdown(
-        "<h3 style='text-align:center;color:white;'>Kies hieronder een actie</h3>",
+        "<h3 style='text-align:center;color:white;'>Kies hieronder een 
+ actie</h3>",
         unsafe_allow_html=True
-    )
-col1, col2, col3 = st.columns([1,2,1])
+     )
+     col1, col2, col3 = st.columns([1,2,1])
 
-with col2:
+     with col2:
 
-    if st.button("📅 Mijn rooster"):
-        st.session_state.pagina = "rooster"
-        st.rerun()
+         if st.button("📅 Mijn rooster"):
+             st.session_state.pagina = "rooster"
+             st.rerun()
 
-    if st.button("🚪 Afmelden"):
-        st.session_state.pagina = "login"
+         if st.button("🚪 Afmelden"):
+             st.session_state.pagina = "login"
         st.rerun()
