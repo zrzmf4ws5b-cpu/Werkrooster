@@ -95,9 +95,10 @@ elif st.session_state.pagina == "welkom":
         f"<h1 style='text-align:center;color:gold;'>👋 Welkom {st.session_state.gebruiker}</h1>",
         unsafe_allow_html=True
     )
-
-    st.write("")
-    st.write("Kies hieronder een actie")
+st.markdown(
+        "<h3 style='text-align:center;color:white;'>Kies hieronder een actie</h3>",
+        unsafe_allow_html=True
+    
 
     if st.button("📅 Mijn rooster"):
         st.session_state.pagina = "rooster"
