@@ -58,7 +58,11 @@ if st.session_state.pagina == "start":
         st.session_state.pagina = "login"
         st.rerun()     
 elif st.session_state.pagina == "login": 
+    if st.button("🔙 Terug"):
 
+        st.session_state.pagina = "start"
+
+        st.rerun()
     st.markdown(
     "<h1 style='text-align:center;color:gold;'>🔐 Login</h1>",
     unsafe_allow_html=True
