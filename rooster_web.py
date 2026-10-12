@@ -15,7 +15,7 @@ if st.session_state.pagina == "start":
     st.write("")
     st.write("")
     
-    st.image("logo.png", use_container_width=700)
+    st.image("logo.png", use_container_width=True)
     st.write("")
     st.write("") 
     st.write("")
