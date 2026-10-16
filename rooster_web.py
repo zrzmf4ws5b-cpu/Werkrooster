@@ -121,6 +121,8 @@ elif st.session_state.pagina == "welkom":
 
 
 elif st.session_state.pagina == "rooster":
+elif st.session_state.pagina == "rooster":
+    pass    
 elif st.session_state.pagina == "vacatures":
 
     st.markdown(
