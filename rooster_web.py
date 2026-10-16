@@ -17,13 +17,20 @@ label {
 }
 </style>
 """, unsafe_allow_html=True)
-
-if st.button("Verder"):
-        st.session_state.pagina = "login"
-        st.rerun()
-
+st.markdown("""
+<style>
+div.stButton > button {
+    background-color: gold;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+}
 </style>
 """, unsafe_allow_html=True)
+
 
 if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
