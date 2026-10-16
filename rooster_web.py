@@ -226,7 +226,7 @@ elif st.session_state.pagina == "vacatures":
 
 elif st.session_state.pagina == "dagdetail":    
 
-        st.markdown(
+    st.markdown(
             f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
             unsafe_allow_html=True
     )
