@@ -4,17 +4,11 @@ st.set_page_config(
     page_title="FlexPlan",
     page_icon="FlexPlan.png"
 )
-if st.session_state.pagina == "start":
-
-    st.image("FlexPlan.png", width=700)
-
-    st.markdown(
-        "<h1 style='text-align:center;color:gold;'>FlexPlan</h1>",
-        unsafe_allow_html=True
-    )
-if st.button("Verder"):
-        st.session_state.pagina = "login"
-        st.rerun()
+st.markdown("""
+<style>
+.stApp {
+    background-color: #1f3b66;
+}
 
 label {
     color: gold !important;
@@ -24,17 +18,10 @@ label {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-div.stButton > button {
-    background-color: gold;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    height: 40px;
-    width: 140px;
-    font-size: 14px;
+if st.button("Verder"):
+        st.session_state.pagina = "login"
+        st.rerun()
+
 }
 </style>
 """, unsafe_allow_html=True)
