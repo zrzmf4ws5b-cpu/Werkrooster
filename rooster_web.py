@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 st.set_page_config(
-    page_title="WerkRooster",
+    page_title="FlexPlan",
     page_icon="📅"
 )
 st.markdown("""
