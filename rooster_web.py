@@ -10,7 +10,11 @@ if st.session_state.pagina == "start":
 
     st.markdown(
         "<h1 style='text-align:center;color:gold;'>FlexPlan</h1>",
-        unsafe_a
+        unsafe_allow_html=True
+    )
+if st.button("Verder"):
+        st.session_state.pagina = "login"
+        st.rerun()
 }
 
 label {
