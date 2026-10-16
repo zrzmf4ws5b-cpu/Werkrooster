@@ -53,7 +53,10 @@ if st.session_state.pagina == "start":
     
     if st.button("Verder"):
         st.session_state.pagina = "login"
-        st.rerun()     
+        st.rerun()
+    if st.button("🚪 Afmelden"):
+    st.session_state.clear()
+    st.rerun()
 elif st.session_state.pagina == "login": 
     if st.button("🔙 Terug"):
 
