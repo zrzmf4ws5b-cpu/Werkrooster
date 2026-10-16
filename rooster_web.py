@@ -39,6 +39,7 @@ if st.session_state.pagina == "start":
         "<h1 style='text-align:center;color:gold;'>FlexPlan</h1>",
         unsafe_allow_html=True
     )
+    st.image("FlexPlan.png", width=700)
     st.write("")
     st.write("")
     st.write("")
