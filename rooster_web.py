@@ -121,6 +121,22 @@ elif st.session_state.pagina == "welkom":
 
 
 elif st.session_state.pagina == "rooster":
+elif st.session_state.pagina == "vacatures":
+
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>💼 Vacatures</h1>",
+        unsafe_allow_html=True
+    )
+
+    if st.button("💼 Vacatures bekijken"):
+        pass
+
+    if st.button("🎓 Stages bekijken"):
+        pass
+
+    if st.button("🔙 Terug"):
+        st.session_state.pagina = "welkom"
+        st.rerun()
 
     st.markdown(
     "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
