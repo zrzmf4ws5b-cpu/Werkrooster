@@ -39,7 +39,7 @@ if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
 if st.session_state.pagina == "start":   
     st.markdown(
-        "<h1 style='text-align:center;color:gold;'>WerkRooster</h1>",
+        "<h1 style='text-align:center;color:gold;'>FlexPlan</h1>",
         unsafe_allow_html=True
     )
     st.write("")
