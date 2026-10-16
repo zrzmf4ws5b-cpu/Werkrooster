@@ -120,9 +120,7 @@ elif st.session_state.pagina == "welkom":
         
 
 
-elif st.session_state.pagina == "rooster":
-elif st.session_state.pagina == "rooster":
-    pass    
+elif st.session_state.pagina == "rooster":    
 elif st.session_state.pagina == "vacatures":
 
     st.markdown(
@@ -226,8 +224,6 @@ elif st.session_state.pagina == "vacatures":
         st.rerun()
 
 elif st.session_state.pagina == "dagdetail":    
-  
-elif st.session_state.pagina == "dagdetail":
 
     st.markdown(
         f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
