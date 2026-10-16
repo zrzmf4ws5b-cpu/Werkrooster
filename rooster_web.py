@@ -15,7 +15,6 @@ if st.session_state.pagina == "start":
 if st.button("Verder"):
         st.session_state.pagina = "login"
         st.rerun()
-}
 
 label {
     color: gold !important;
