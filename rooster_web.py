@@ -22,7 +22,6 @@ if st.button("Verder"):
         st.session_state.pagina = "login"
         st.rerun()
 
-}
 </style>
 """, unsafe_allow_html=True)
 
