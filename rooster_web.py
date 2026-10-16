@@ -213,10 +213,12 @@ elif st.session_state.pagina == "vacatures":
     )
 
     if st.button("💼 Vacatures bekijken"):
-        pass
+        st.session_state.pagina = "vacaturelijst"
+        st.rerun()
 
     if st.button("🎓 Stages bekijken"):
-        pass
+        st.session_state.pagina = "stagelijst"
+        st.rerun()
 
     if st.button("🔙 Terug"):
         st.session_state.pagina = "welkom"
@@ -224,9 +226,9 @@ elif st.session_state.pagina == "vacatures":
 
 elif st.session_state.pagina == "dagdetail":    
 
-    st.markdown(
-        f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
-        unsafe_allow_html=True
+        st.markdown(
+            f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
+            unsafe_allow_html=True
     )
 
     st.markdown(
