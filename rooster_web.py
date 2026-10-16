@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 st.set_page_config(
     page_title="FlexPlan",
-    page_icon="FlexPlan.png",
-st.image("FlexPlan.png", width=180)   
+    page_icon="FlexPlan.png"
 )
+st.image("FlexPlan.png", width=180)   
+
 st.markdown("""
 <style>
 .stApp {
