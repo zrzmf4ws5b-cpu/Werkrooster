@@ -110,7 +110,7 @@ elif st.session_state.pagina == "welkom":
              st.rerun()
 
          if st.button("🚪 Afmelden"):
-             st.session_state.pagina = "login"
+             st.session_state.pagina = "start"
              st.rerun()
         
 
