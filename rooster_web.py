@@ -126,10 +126,12 @@ elif st.session_state.pagina == "vacatures":
     )
 
     if st.button("💼 Vacatures bekijken"):
-        pass
+    st.session_state.pagina = "vacaturelijst"
+    st.rerun()
 
     if st.button("🎓 Stages bekijken"):
-        pass
+        st.session_state.pagina = "stagelijst"
+        st.rerun()
 
     if st.button("🔙 Terug"):
         st.session_state.pagina = "welkom"
