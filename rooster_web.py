@@ -50,9 +50,7 @@ if st.session_state.pagina == "start":
     st.write("")
     st.write("")
     st.write("")
-    st.write("")
-    st.write("")
-    st.write("")
+    
     if st.button("Verder"):
         st.session_state.pagina = "login"
         st.rerun()     
