@@ -117,10 +117,7 @@ elif st.session_state.pagina == "welkom":
          if st.button("🚪 Afmelden"):
              st.session_state.pagina = "start"
              st.rerun()
-        
-
-
-elif st.session_state.pagina == "rooster":    
+            
 elif st.session_state.pagina == "vacatures":
 
     st.markdown(
