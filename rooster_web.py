@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 st.set_page_config(
     page_title="FlexPlan",
-    page_icon="📅"
+    page_icon="FlexPlan.png"
 )
 st.markdown("""
 <style>
 .stApp {
-    background-color: #1f3b66;
+    background-color: #1f3b66; 
 }
 
 label {
