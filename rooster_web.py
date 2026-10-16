@@ -4,12 +4,13 @@ st.set_page_config(
     page_title="FlexPlan",
     page_icon="FlexPlan.png"
 )
-st.image("FlexPlan.png", width=180)   
+if st.session_state.pagina == "start":
 
-st.markdown("""
-<style>
-.stApp {
-    background-color: #1f3b66; 
+    st.image("FlexPlan.png", width=700)
+
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>FlexPlan</h1>",
+        unsafe_a
 }
 
 label {
