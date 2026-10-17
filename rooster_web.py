@@ -126,7 +126,7 @@ elif st.session_state.pagina == "welkom":
 
  elif st.session_state.pagina == "rooster":
 
-     st.markdown(
+    st.markdown(
                 "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
                 unsafe_allow_html=True
     )
