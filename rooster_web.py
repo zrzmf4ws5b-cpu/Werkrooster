@@ -205,7 +205,7 @@ elif st.session_state.pagina == "dagdetail":
     st.write("")
     st.write("")
 
-    
+    )
     col1, col2, col3 = st.columns([3,1,3])
 
     with col2:
