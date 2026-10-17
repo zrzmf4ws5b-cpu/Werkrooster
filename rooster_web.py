@@ -122,26 +122,6 @@ elif st.session_state.pagina == "welkom":
             unsafe_allow_html=True
         )
 
-        st.markdown(
-        """
-        <div style="
-            background-color:#4A86E8;
-            color:white;
-            padding:20px;
-            border-radius:15px;
-            text-align:center;
-            font-size:22px;
-            font-weight:bold;
-        ">
-        🟦 Vandaag<br><br>
-        Vrijdag<br>
-        🕒 Start: 06:30<br>
-        📍 Amstel 1
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
     st.write("")
     st.write("")
 
