@@ -130,9 +130,6 @@ elif st.session_state.pagina == "rooster":
     )
 
      st.write("Nieuw rooster scherm")
-elif st.session_state.pagina == "rooster":
-
-    st.write("Rooster werkt")
 
 elif st.session_state.pagina == "dagdetail":    
 
