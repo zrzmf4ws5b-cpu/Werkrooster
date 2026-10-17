@@ -124,93 +124,9 @@ with col2:
             st.session_state.pagina = "start"
             st.rerun()
 
-     st.markdown(
-        "<h1 style='text-align:center;color:gold;'>💼 Vacatures</h1>",
-        unsafe_allow_html=True
-    )
-
-    if st.button("💼 Vacatures bekijken"):
-       st.session_state.pagina = "vacaturelijst"
-       st.rerun()
-
-    if st.button("🎓 Stages bekijken"):
-        st.session_state.pagina = "stagelijst"
-        st.rerun()
-
-    if st.button("🔙 Terug"):
-        st.session_state.pagina = "welkom"
-        st.rerun()
-
-    st.markdown(
-    "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
-    unsafe_allow_html=True
-    )
     
-    st.markdown(
-    "<div style='background-color:#4A86E8; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Maandag</div>",
-    unsafe_allow_html=True
-    )
-    if st.button("Open Maandag"):
-
-        st.session_state.dag = "Maandag"
-
-        st.session_state.pagina = "dagdetail"
-
-        st.rerun()
-   
-    st.markdown(
-    "<div style='background-color:#2ECC71; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Dinsdag</div>",
-    unsafe_allow_html=True
-    )
 
     
-    if st.button("Open Dinsdag"):
-
-        st.session_state.dag = "Dinsdag"
-
-        st.session_state.pagina = "dagdetail"
-
-        st.rerun()
-    
-    st.markdown(
-    "<div style='background-color:#F39C12; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Woensdag</div>",
-    unsafe_allow_html=True
-    )
-
-    if st.button("Open Woensdag"):
-
-        st.session_state.dag = "Woensdag"
-
-        st.session_state.pagina = "dagdetail"
-
-        st.rerun()
-    st.markdown(
-    "<div style='background-color:#E74C3C; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Donderdag</div>",
-    unsafe_allow_html=True
-    )
-
-    if st.button("Open Donderdag"):
-
-        st.session_state.dag = "Donderdag"
-
-        st.session_state.pagina = "dagdetail"
-
-        st.rerun()
-
-    st.markdown(
-    "<div style='background-color:#3498DB; color:white; padding:15px; border-radius:10px; font-size:20px; font-weight:bold;'>Vrijdag</div>",
-    unsafe_allow_html=True
-    )
-
-    if st.button("Open Vrijdag"):
-
-        st.session_state.dag = "Vrijdag"
-
-        st.session_state.pagina = "dagdetail"
-
-        st.rerun()
-
-
 
 elif st.session_state.pagina == "dagdetail":    
 
