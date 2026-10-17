@@ -152,7 +152,7 @@ elif st.session_state.pagina == "rooster":
     st.write("")
     st.write("")
     st.write("")
-st.write("")
+    st.write("")
 
 st.markdown(
     "<h3 style='color:gold;'>📅 Deze week</h3>",
