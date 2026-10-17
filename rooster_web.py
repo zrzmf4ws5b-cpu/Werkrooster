@@ -122,6 +122,31 @@ elif st.session_state.pagina == "welkom":
         if st.button("🚪 Afmelden"):
             st.session_state.pagina = "start"
             st.rerun()
+elif st.session_state.pagina == "rooster":
+
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.write("")
+
+    st.markdown(
+        """
+        <div style="
+            background-color:#4A86E8;
+            color:white;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            font-size:24px;
+            font-weight:bold;">
+            📅 Vandaag
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 elif st.session_state.pagina == "dagdetail":    
 
     st.markdown(
