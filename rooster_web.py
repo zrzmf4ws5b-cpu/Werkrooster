@@ -103,7 +103,7 @@ elif st.session_state.pagina == "welkom":
     st.markdown(
         "<h3 style='text-align:center;color:white;'>Kies hieronder een actie</h3>",
         unsafe_allow_html=True
-         st.write("")
+            st.write("")
             st.write("")
             st.write("")   
     )
