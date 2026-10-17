@@ -117,13 +117,6 @@ elif st.session_state.pagina == "welkom":
              st.rerun()
         
 
-       
-    if st.button("🔙 Terug"):
-        st.session_state.pagina = "welkom"
-        st.rerun()
-        
-            
-
          if st.button("💼 Vacatures"):
             st.session_state.pagina = "vacatures"
             st.rerun()
