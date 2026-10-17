@@ -129,8 +129,6 @@ elif st.session_state.pagina == "rooster":
         unsafe_allow_html=True
     )
 
-     st.write("Nieuw rooster scherm")
-
 elif st.session_state.pagina == "dagdetail":    
 
      st.markdown(
