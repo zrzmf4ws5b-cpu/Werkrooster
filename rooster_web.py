@@ -117,22 +117,7 @@ elif st.session_state.pagina == "welkom":
              st.rerun()
         
 
-        st.markdown(
-            "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
-            unsafe_allow_html=True
-        )
-
-    st.write("")
-    st.write("")
-
-    if st.button("📂 Open dienst"):
-        st.session_state.dag = "Vrijdag"
-        st.session_state.pagina = "dagdetail"
-        st.rerun()
-
-    st.write("")
-    st.write("")
-
+       
     if st.button("🔙 Terug"):
         st.session_state.pagina = "welkom"
         st.rerun()
