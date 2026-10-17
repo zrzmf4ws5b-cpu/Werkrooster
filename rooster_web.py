@@ -109,8 +109,7 @@ elif st.session_state.pagina == "welkom":
     st.write("")  
     
     col1, col2, col3 = st.columns([1,2,1])
-
-    with col2:
+with col2:
 
          if st.button("📅 Mijn rooster"):
             st.session_state.pagina = "rooster"
