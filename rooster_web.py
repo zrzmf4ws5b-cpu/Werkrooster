@@ -124,8 +124,6 @@ with col2:
             st.session_state.pagina = "start"
             st.rerun()
 
-    
-
 elif st.session_state.pagina == "vacatures":
 
      st.markdown(
