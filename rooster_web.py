@@ -131,7 +131,8 @@ elif st.session_state.pagina == "rooster":
     elif st.session_state.pagina == "rooster":
 
     st.write("Rooster werkt")
-elif st.session_state.pagina == "dagdetail":    
+
+ elif st.session_state.pagina == "dagdetail":    
 
      st.markdown(
             f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
