@@ -122,8 +122,7 @@ elif st.session_state.pagina == "welkom":
         if st.button("🚪 Afmelden"):
             st.session_state.pagina = "start"
             st.rerun()
-
-  elif st.session_state.pagina == "dagdetail":    
+elif st.session_state.pagina == "dagdetail":    
 
     st.markdown(
     f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
