@@ -128,9 +128,7 @@ elif st.session_state.pagina == "rooster":
         "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
         unsafe_allow_html=True
     )
- elif st.session_state.pagina == "rooster":
-
-        st.write("Rooster werkt")
+ 
 
  elif st.session_state.pagina == "dagdetail":    
 
