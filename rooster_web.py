@@ -113,8 +113,8 @@ elif st.session_state.pagina == "welkom":
 with col2:
 
          if st.button("📅 Mijn rooster"):
-             st.session_state.pagina = "rooster"
-             st.rerun()
+            st.session_state.pagina = "rooster"
+            st.rerun()
         
 
          if st.button("💼 Vacatures"):
