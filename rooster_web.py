@@ -115,14 +115,14 @@ elif st.session_state.pagina == "welkom":
          if st.button("📅 Mijn rooster"):
              st.session_state.pagina = "rooster"
              st.rerun()
-         elif st.session_state.pagina == "rooster":
+    elif st.session_state.pagina == "rooster":
 
-    st.markdown(
-        "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
-        unsafe_allow_html=True
-    )
+        st.markdown(
+            "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
+            unsafe_allow_html=True
+        )
 
-    st.markdown(
+        st.markdown(
         """
         <div style="
             background-color:#4A86E8;
