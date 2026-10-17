@@ -144,8 +144,8 @@ elif st.session_state.pagina == "rooster":
             📅 Vandaag<br><br>
             Vrijdag 17 oktober<br><br>
             
-            🕒 Start: 06:30<br>
-            🕒 Eind: 15:00<br><br>
+            🕒 Start: 06:30
+            🕒 Eind: 15:00
             📍 Amstel 1
             👥 4 collega's
         </div>
