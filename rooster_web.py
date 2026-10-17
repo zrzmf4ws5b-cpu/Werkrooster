@@ -130,7 +130,7 @@ elif st.session_state.pagina == "rooster":
     )
     elif st.session_state.pagina == "rooster":
 
-    st.write("Rooster werkt")
+        st.write("Rooster werkt")
 
  elif st.session_state.pagina == "dagdetail":    
 
