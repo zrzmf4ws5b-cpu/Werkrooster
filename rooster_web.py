@@ -223,7 +223,35 @@ elif st.session_state.pagina == "vacatures":
     if st.button("🔙 Terug"):
         st.session_state.pagina = "welkom"
         st.rerun()
+elif st.session_state.pagina == "vacaturelijst":
 
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>💼 Vacatures</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.write("Vacature 1")
+    st.write("Vacature 2")
+    st.write("Vacature 3")
+
+    if st.button("🔙 Terug naar vacatures"):
+        st.session_state.pagina = "vacatures"
+        st.rerun()
+
+elif st.session_state.pagina == "stagelijst":
+
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>🎓 Stages</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.write("Stage 1")
+    st.write("Stage 2")
+    st.write("Stage 3")
+
+    if st.button("🔙 Terug naar vacatures"):
+        st.session_state.pagina = "vacatures"
+        st.rerun()
 elif st.session_state.pagina == "dagdetail":    
 
     st.markdown(
