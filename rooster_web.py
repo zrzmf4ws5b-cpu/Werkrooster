@@ -158,15 +158,15 @@ elif st.session_state.pagina == "rooster":
     col1, col2 = st.columns(2)
 
     with col1:
-    if st.button("📂 Open dienst"):
-        st.session_state.dag = "Vrijdag"
-        st.session_state.pagina = "dagdetail"
-        st.rerun()
+        if st.button("📂 Open dienst"):
+            st.session_state.dag = "Vrijdag"
+            st.session_state.pagina = "dagdetail"
+            st.rerun()
 
     with col2:
-    if st.button("🔙 Terug"):
-        st.session_state.pagina = "welkom"
-        st.rerun()
+        if st.button("🔙 Terug"):
+            st.session_state.pagina = "welkom"
+            st.rerun()
     
     st.write("")
     st.write("")
