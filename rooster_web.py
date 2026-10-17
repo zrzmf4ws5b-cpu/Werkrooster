@@ -127,15 +127,15 @@ elif st.session_state.pagina == "welkom":
  elif st.session_state.pagina == "rooster":
 
     st.markdown(
-                "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
-                unsafe_allow_html=True
+        "<h1 style='text-align:center;color:gold;'>📅 Mijn rooster</h1>",
+        unsafe_allow_html=True
     )
 
     st.write("Nieuw rooster scherm")
 
-         if st.button("🔙 Terug"):
-           st.session_state.pagina = "welkom"
-           st.rerun()
+    if st.button("🔙 Terug"):
+        st.session_state.pagina = "welkom"
+        st.rerun()
 
     
 
