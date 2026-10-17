@@ -136,10 +136,6 @@ elif st.session_state.pagina == "welkom":
     if st.button("🔙 Terug"):
         st.session_state.pagina = "welkom"
         st.rerun()
-        
-
-       
-    )
 
     
 
