@@ -124,8 +124,6 @@ with col2:
             st.session_state.pagina = "start"
             st.rerun()
 
-elif st.session_state.pagina == "vacatures":
-
      st.markdown(
         "<h1 style='text-align:center;color:gold;'>💼 Vacatures</h1>",
         unsafe_allow_html=True
