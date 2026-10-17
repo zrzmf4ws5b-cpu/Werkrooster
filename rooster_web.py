@@ -159,23 +159,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-col1, col2, col3, col4, col5 = st.columns(5)
 
-with col1:
-    st.button("Ma")
-
-with col2:
-    st.button("Di")
-
-with col3:
-    st.button("Wo")
-
-with col4:
-    st.button("Do")
-
-with col5:
-    st.button("Vr")
-st.write("")
     
 if st.button("📂 Open dienst"):
     st.session_state.dag = "Vrijdag"
