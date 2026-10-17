@@ -142,8 +142,12 @@ elif st.session_state.pagina == "rooster":
             font-size:24px;
             font-weight:bold;">
             📅 Vandaag<br><br>
+            Vrijdag 17 oktober<br><br>
+            
             🕒 Start: 06:30<br>
+            🕒 Eind: 15:00<br><br>
             📍 Amstel 1
+            👥 4 collega's
         </div>
         """,
         unsafe_allow_html=True
