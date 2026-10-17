@@ -141,7 +141,9 @@ elif st.session_state.pagina == "rooster":
             text-align:center;
             font-size:24px;
             font-weight:bold;">
-            📅 Vandaag
+            📅 Vandaag<br><br>
+            🕒 Start: 06:30<br>
+            📍 Amstel 1
         </div>
         """,
         unsafe_allow_html=True
