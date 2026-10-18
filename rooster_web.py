@@ -183,9 +183,9 @@ elif st.session_state.pagina == "rooster":
 
 elif st.session_state.pagina == "weekselectie":
 
-         st.markdown(
-             "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
-             unsafe_allow_html=True
+        st.markdown(
+            "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
+            unsafe_allow_html=True
         )
 
         if st.button("Week 43"):
