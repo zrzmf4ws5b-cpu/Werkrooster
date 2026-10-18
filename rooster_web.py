@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 
 
-)
-
 diensten = pd.read_excel(
     "rooster.xlsx",
     sheet_name="Diensten"
