@@ -4,7 +4,7 @@ import pandas as pd
 
 diensten = pd.read_excel(
     "rooster.xlsx",
-    sheet_name="Diensten"
+    sheet_name="diensten"
 )
 
 weken = pd.read_excel(
