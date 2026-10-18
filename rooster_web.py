@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 medewerkers = pd.read_excel(
     "rooster.xlsx",
-    sheet_name="medwerkers"
+    sheet_name="Medwerkers"
 )
 
 diensten = pd.read_excel(
