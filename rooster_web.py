@@ -198,10 +198,10 @@ elif st.session_state.pagina == "weekselectie":
             st.session_state.pagina = "weekrooster"
             st.rerun()
 
-         if st.button("Week 45"):
-             st.session_state.week = 45
-             st.session_state.pagina = "weekrooster"
-             st.rerun()
+        if st.button("Week 45"):
+            st.session_state.week = 45
+            st.session_state.pagina = "weekrooster"
+            st.rerun()
 
          if st.button("🔙 Terug"):
              st.session_state.pagina = "rooster"
