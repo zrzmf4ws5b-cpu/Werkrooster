@@ -14,7 +14,7 @@ weken = pd.read_excel(
     "rooster.xlsx",
     sheet_name="Weken"
 )
-
+print(medewerkers.head())
 
 st.set_page_config(
     page_title="FlexPlan",
