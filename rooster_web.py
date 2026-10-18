@@ -321,7 +321,7 @@ elif st.session_state.pagina == "dagdetail":
     st.write("")
 
     st.markdown(
-    "<div style='background-color:#F39C12;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>👥 Collega's<br>Piet<br>Klaas<br>Marie<br>Ahmed</div>",
+    "<div style='background-color:#F39C12;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>👥 Collega's<br>Jay<br>Piento<br>Dre<br>Borsoe</div>",
     unsafe_allow_html=True
     )
     st.write("")
