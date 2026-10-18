@@ -188,7 +188,103 @@ elif st.session_state.pagina == "weekrooster":
         unsafe_allow_html=True
     )
 
-    
+
+
+elif st.session_state.pagina == "weekrooster":
+
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>📅 Weekrooster</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        "<h3 style='text-align:center;color:white;'>Week 43</h3>",
+        unsafe_allow_html=True
+    )
+
+    col1, col2, col3, col4, col5 = st.columns(5)
+
+    with col1:
+        st.markdown("""
+        <div style="
+            background-color:#4A86E8;
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            font-weight:bold;">
+            Ma<br><br>
+            06:30<br>
+            15:00
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+        <div style="
+            background-color:#2ECC71;
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            font-weight:bold;">
+            Di<br><br>
+            Vrij
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div style="
+            background-color:#F39C12;
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            font-weight:bold;">
+            Wo<br><br>
+            06:30<br>
+            15:00
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col4:
+        st.markdown("""
+        <div style="
+            background-color:#E74C3C;
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            font-weight:bold;">
+            Do<br><br>
+            07:00<br>
+            16:00
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col5:
+        st.markdown("""
+        <div style="
+            background-color:#3498DB;
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            font-weight:bold;">
+            Vr<br><br>
+            06:30<br>
+            15:00
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.write("")
+    st.write("")
+
+    if st.button("🔙 Terug naar rooster"):
+        st.session_state.pagina = "rooster"
+        st.rerun()
+
 
 elif st.session_state.pagina == "dagdetail":    
 
