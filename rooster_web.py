@@ -181,31 +181,31 @@ elif st.session_state.pagina == "rooster":
     st.write("")
     st.write("")
 
-elif st.session_state.pagina == "weekselectie":
+    elif st.session_state.pagina == "weekselectie":
 
- st.markdown(
-        "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
-        unsafe_allow_html=True
-    )
+         st.markdown(
+             "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
+             unsafe_allow_html=True
+        )
 
-    if st.button("Week 43"):
-        st.session_state.week = 43
-        st.session_state.pagina = "weekrooster"
-        st.rerun()
+        if st.button("Week 43"):
+            st.session_state.week = 43
+            st.session_state.pagina = "weekrooster"
+            st.rerun()
 
-    if st.button("Week 44"):
-        st.session_state.week = 44
-        st.session_state.pagina = "weekrooster"
-        st.rerun()
+        if st.button("Week 44"):
+            st.session_state.week = 44
+            st.session_state.pagina = "weekrooster"
+            st.rerun()
 
-    if st.button("Week 45"):
-        st.session_state.week = 45
-        st.session_state.pagina = "weekrooster"
-        st.rerun()
+         if st.button("Week 45"):
+             st.session_state.week = 45
+             st.session_state.pagina = "weekrooster"
+             st.rerun()
 
-    if st.button("🔙 Terug"):
-        st.session_state.pagina = "rooster"
-        st.rerun()
+         if st.button("🔙 Terug"):
+             st.session_state.pagina = "rooster"
+             st.rerun()
     
     )
 elif st.session_state.pagina == "weekrooster":
