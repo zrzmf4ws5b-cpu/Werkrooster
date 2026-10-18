@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-medewerkers = pd.read_excel(
+Medewerkers = pd.read_excel(
     "rooster.xlsx",
     sheet_name="Medwerkers"
 )
