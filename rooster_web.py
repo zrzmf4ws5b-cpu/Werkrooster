@@ -1,22 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
- diensten = pd.read_excel(
-    "rooster.xlsx",
-    sheet_name="diensten"
-)
-
-weken = pd.read_excel(
-    "rooster.xlsx",
-    sheet_name="Weken"
-)
-print(medewerkers.head())
-
-st.set_page_config(
-    page_title="FlexPlan",
-    page_icon="FlexPlan.png"
-)
 st.markdown("""
 <style>
 .stApp {
