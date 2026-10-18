@@ -203,9 +203,9 @@ elif st.session_state.pagina == "weekselectie":
             st.session_state.pagina = "weekrooster"
             st.rerun()
 
-         if st.button("🔙 Terug"):
-             st.session_state.pagina = "rooster"
-             st.rerun()
+        if st.button("🔙 Terug"):
+            st.session_state.pagina = "rooster"
+            st.rerun()
     
     )
 elif st.session_state.pagina == "weekrooster":
