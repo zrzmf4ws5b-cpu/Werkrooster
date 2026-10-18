@@ -2,17 +2,17 @@ import streamlit as st
 import pandas as pd
 medewerkers = pd.read_excel(
     "rooster.xlsx",
-    sheet_name="medewerkers"
+    sheet_name="Medewerkers"
 )
 
 diensten = pd.read_excel(
     "rooster.xlsx",
-    sheet_name="diensten"
+    sheet_name="Diensten"
 )
 
 weken = pd.read_excel(
     "rooster.xlsx",
-    sheet_name="weken"
+    sheet_name="Weken"
 )
 
 
