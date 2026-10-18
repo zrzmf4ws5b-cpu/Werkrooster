@@ -192,7 +192,7 @@ elif st.session_state.pagina == "dagdetail":
     )
 
     st.markdown(
-    "<div style='background-color:#4A86E8;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>🕒 Dienst<br>06:30</div>",
+    "<div style='background-color:#4A86E8;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>🕒 Dienst<br>06:30 - 15:00</div>",
     unsafe_allow_html=True
     )
 
