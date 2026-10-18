@@ -199,7 +199,7 @@ elif st.session_state.pagina == "dagdetail":
     st.write("")
 
     st.markdown(
-    "<div style='background-color:#2ECC71;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>📍 Locatie<br>Amstel 1</div>",
+    "<div style='background-color:#2ECC71;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>📍 Locatie<br>Amstel 1 - Waterloopplein</div>",
     unsafe_allow_html=True
     )
     st.write("")
