@@ -192,7 +192,7 @@ elif st.session_state.pagina == "weekrooster":
     )
 
     st.markdown(
-        "<h3 style='text-align:center;color:white;'>Week 43</h3>",
+        "<h3 style='text-align:center;color:white;'>week {st.session_state.week}</h3>"
         unsafe_allow_html=True
     )
 
