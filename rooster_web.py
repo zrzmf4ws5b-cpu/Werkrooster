@@ -206,8 +206,8 @@ elif st.session_state.pagina == "weekselectie":
     if st.button("🔙 Terug"):
         st.session_state.pagina = "rooster"
         st.rerun()
-
-
+    
+    )
 elif st.session_state.pagina == "weekrooster":
 
     st.markdown(
