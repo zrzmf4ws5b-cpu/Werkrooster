@@ -167,7 +167,7 @@ elif st.session_state.pagina == "rooster":
 
     with col2:
         if st.button("📅 Weekrooster"):
-            st.session_state.pagina = "weekrooster"
+            st.session_state.pagina = "weekselectie"
             st.rerun()
 
     with col3:
