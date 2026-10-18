@@ -181,7 +181,7 @@ elif st.session_state.pagina == "rooster":
     st.write("")
     st.write("")
 
-    elif st.session_state.pagina == "weekselectie":
+elif st.session_state.pagina == "weekselectie":
 
          st.markdown(
              "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
