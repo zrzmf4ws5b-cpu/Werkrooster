@@ -181,7 +181,6 @@ elif st.session_state.pagina == "rooster":
     st.write("")
     st.write("")
 
-    )
 
 
 
