@@ -181,7 +181,49 @@ elif st.session_state.pagina == "rooster":
     st.write("")
     st.write("")
 
+elif st.session_state.pagina == "weekrooster":
 
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>📅 Weekrooster</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        "<h3 style='text-align:center;color:white;'>Week 42</h3>",
+        unsafe_allow_html=True
+    )
+
+    col1, col2, col3, col4, col5 = st.columns(5)
+
+    with col1:
+        st.markdown("**Ma**")
+        st.write("06:30")
+        st.write("15:00")
+
+    with col2:
+        st.markdown("**Di**")
+        st.write("Vrij")
+
+    with col3:
+        st.markdown("**Wo**")
+        st.write("06:30")
+        st.write("15:00")
+
+    with col4:
+        st.markdown("**Do**")
+        st.write("07:00")
+        st.write("16:00")
+
+    with col5:
+        st.markdown("**Vr**")
+        st.write("06:30")
+        st.write("15:00")
+
+    st.write("")
+
+    if st.button("🔙 Terug naar rooster"):
+        st.session_state.pagina = "rooster"
+        st.rerun()
     
 
 elif st.session_state.pagina == "dagdetail":    
