@@ -259,7 +259,7 @@ elif st.session_state.pagina == "weekselectie":
             st.rerun()
     
 elif st.session_state.pagina == "weekrooster":
-    st.write("Gekozen week:", st.session_state.week)
+    
     
     week_rij = weken.loc[
         weken["Week"] == st.session_state.week
@@ -269,7 +269,10 @@ elif st.session_state.pagina == "weekrooster":
         week_rij.iloc[0]["Verschuiving"]
     )
 
-    st.write("Verschuiving:", verschuiving)
+    nieuwe_positie = positie + verschuiving
+
+    while nieuwe_positie > 5:
+        nieuwe_positie = nieuwe_positie - 5
     
     
     st.markdown(
