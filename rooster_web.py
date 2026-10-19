@@ -283,7 +283,8 @@ elif st.session_state.pagina == "weekselectie":
             st.rerun()
     
 elif st.session_state.pagina == "weekrooster":
-
+    st.write("Gekozen week:", st.session_state.week)
+    
     st.markdown(
         "<h1 style='text-align:center;color:gold;'>📅 Weekrooster</h1>",
         unsafe_allow_html=True
