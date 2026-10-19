@@ -376,31 +376,7 @@ elif st.session_state.pagina == "weekrooster":
 elif st.session_state.pagina == "dagdetail":
 
 
-elif st.session_state.pagina == "bijzonderheden":
 
-    st.markdown(
-        "<h1 style='text-align:center;color:gold;'>📝 Bijzonderheden</h1>",
-        unsafe_allow_html=True
-    )
-
-    st.write("")
-
-    melding = st.text_area(
-        "Voer hier een bijzonderheid in"
-    )
-
-    st.write("")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        if st.button("💾 Opslaan"):
-            st.success("Bijzonderheid opgeslagen")
-
-    with col2:
-        if st.button("🔙 Terug"):
-            st.session_state.pagina = "rooster"
-            st.rerun()
 
     st.markdown(
         f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
