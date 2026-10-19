@@ -37,7 +37,7 @@ if "gebruiker" in st.session_state:
 
 
 
-positie = int(purcy_rij.iloc[0]["Positie"])
+positie = int(medewerkers_rij.iloc[0]["Positie"])
 
 week_rij = weken.loc[
     weken["Week"] == st.session_state.week
