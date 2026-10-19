@@ -162,7 +162,7 @@ elif st.session_state.pagina == "welkom":
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
 
-        if st.button("📅 Mijn rooster"):
+        if st.button("Mijn rooster"):
             st.session_state.pagina = "rooster"
             st.rerun()
         
