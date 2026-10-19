@@ -20,8 +20,23 @@ if "gebruiker" in st.session_state:
 
     medewerker_rij = medewerkers.loc[
         medewerkers["Naam"] == st.session_state.gebruiker
-]
+    ]
+    positie = int(
+        medewerker_rij.iloc[0]["Positie"]
+    )
 
+    dienst_rij = diensten.loc[
+        diensten["Positie"] == positie
+    ]
+
+    dienst = dienst_rij.iloc[0]["Dienst"]
+
+    starttijd, eindtijd = dienst.split("-")
+
+else:
+
+    starttijd = "--:--"
+    eindtijd = "--:--"
 st.set_page_config(
     page_title="FlexPlan",
     page_icon="FlexPlan.png"
