@@ -305,8 +305,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Ma<br><br>
-            14:30<br>
-            22:30
+            {week_starttijd}<br>
+            {week_eindtijd}
         </div>
         """, unsafe_allow_html=True)
 
