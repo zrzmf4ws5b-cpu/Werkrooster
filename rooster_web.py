@@ -14,7 +14,11 @@ weken = pd.read_excel(
     "rooster.xlsx",
     sheet_name="Weken"
 )
+purcy_rij = medewerkers.loc[
+    medewerkers["Naam"] == "Purcy"
+]
 
+st.write(purcy_rij)
 st.set_page_config(
     page_title="FlexPlan",
     page_icon="FlexPlan.png"
@@ -50,8 +54,17 @@ div.stButton > button {
 if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
 
+
+
+
+
 if "week" not in st.session_state:
     st.session_state.week = 43
+
+
+
+
+
 
 
 if st.session_state.pagina == "start":   
