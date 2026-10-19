@@ -270,8 +270,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Ma<br><br>
-            06:30<br>
-            15:00
+            14:30<br>
+            22:30
         </div>
         """, unsafe_allow_html=True)
 
@@ -285,7 +285,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Di<br><br>
-            Vrij
+            14:30<br>
+            22:30
         </div>
         """, unsafe_allow_html=True)
 
@@ -299,8 +300,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Wo<br><br>
-            06:30<br>
-            15:00
+            14:30<br>
+            22:30
         </div>
         """, unsafe_allow_html=True)
 
@@ -314,8 +315,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Do<br><br>
-            07:00<br>
-            16:00
+            14:30<br>
+            22:30
         </div>
         """, unsafe_allow_html=True)
 
@@ -329,8 +330,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Vr<br><br>
-            06:30<br>
-            15:00
+            14:30<br>
+            22:30
         </div>
         """, unsafe_allow_html=True)
 
