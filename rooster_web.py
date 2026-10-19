@@ -20,8 +20,9 @@ purcy_rij = medewerkers.loc[
 positie = int(purcy_rij.iloc[0]["Positie"])
 dienst_rij = diensten.loc[
     diensten["Positie"] == positie
-st.write(dienst_rij)
 ]
+st.write(dienst_rij)
+
 
 dienst = dienst_rij.iloc[0]["Dienst"]
 
