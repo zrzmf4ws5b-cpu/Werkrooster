@@ -216,9 +216,9 @@ elif st.session_state.pagina == "rooster":
             st.session_state.pagina = "dagdetail"
             st.rerun()
     with col2:
-    if st.button("📝 Bijzonderheden"):
-        st.session_state.pagina = "bijzonderheden"
-        st.rerun()
+        if st.button("📝 Bijzonderheden"):
+            st.session_state.pagina = "bijzonderheden"
+            st.rerun()
 
     
     with col3:
