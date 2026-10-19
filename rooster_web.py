@@ -311,7 +311,7 @@ elif st.session_state.pagina == "weekrooster":
         """, unsafe_allow_html=True)
 
     with col2:
-        st.markdown("""
+        st.markdown(f"""
         <div style="
             background-color:#2ECC71;
             color:white;
@@ -320,8 +320,9 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Di<br><br>
-            14:30<br>
-            22:30
+            {week_starttijd}<br>
+            {week_eindtijd}
+
         </div>
         """, unsafe_allow_html=True)
 
