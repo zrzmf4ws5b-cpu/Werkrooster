@@ -391,7 +391,7 @@ elif st.session_state.pagina == "dagdetail":
     datum_vandaag = datetime.now().strftime("%d-%m-%Y")
 
     st.markdown(
-        f"<h1 style='text-align:center;color:gold;'> {st.session_state.dag}
+        f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}
     {datum_vandaag}</h1>",
         unsafe_allow_html=True
     )
