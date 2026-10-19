@@ -208,20 +208,25 @@ elif st.session_state.pagina == "rooster":
     st.write("")
     st.write("")
     st.write("")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
         if st.button("📂 Open dienst"):
             st.session_state.dag = "Maandag"
             st.session_state.pagina = "dagdetail"
             st.rerun()
-
     with col2:
+    if st.button("📝 Bijzonderheden"):
+        st.session_state.pagina = "bijzonderheden"
+        st.rerun()
+
+    
+    with col3:
         if st.button("📅 Weekroosters"):
             st.session_state.pagina = "weekselectie"
             st.rerun()
 
-    with col3:
+    with col4:
         if st.button("🔙 Terug"):
             st.session_state.pagina = "welkom"
             st.rerun()
