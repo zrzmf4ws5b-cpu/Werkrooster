@@ -373,9 +373,8 @@ elif st.session_state.pagina == "weekrooster":
     if st.button("🔙 Terug naar rooster"):
         st.session_state.pagina = "rooster"
         st.rerun()
-
-
 elif st.session_state.pagina == "dagdetail":
+
 
 elif st.session_state.pagina == "bijzonderheden":
 
