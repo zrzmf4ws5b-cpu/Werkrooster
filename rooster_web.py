@@ -238,22 +238,13 @@ elif st.session_state.pagina == "weekselectie":
             "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
             unsafe_allow_html=True
         )
+for week in range(43, 53):
 
-        if st.button("Week 43"):
-            st.session_state.week = 43
-            st.session_state.pagina = "weekrooster"
-            st.rerun()
-
-        if st.button("Week 44"):
-            st.session_state.week = 44
-            st.session_state.pagina = "weekrooster"
-            st.rerun()
-
-        if st.button("Week 45"):
-            st.session_state.week = 45
-            st.session_state.pagina = "weekrooster"
-            st.rerun()
-
+    if st.button(f"Week {week} - 2026"):
+        st.session_state.week = week
+        st.session_state.pagina = "weekrooster"
+        st.rerun()
+       
         if st.button("🔙 Terug"):
             st.session_state.pagina = "rooster"
             st.rerun()
