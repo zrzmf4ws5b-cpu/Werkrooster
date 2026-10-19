@@ -24,7 +24,7 @@ dienst_rij = diensten.loc[
 
 
 dienst = dienst_rij.iloc[0]["Dienst"]
-
+starttijd, eindtijd = dienst.split("-")
 st.set_page_config(
     page_title="FlexPlan",
     page_icon="FlexPlan.png"
