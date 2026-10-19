@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from datetime import datetime
+
 medewerkers = pd.read_excel(
     "rooster.xlsx",
     sheet_name="Medewerkers"
@@ -79,7 +81,17 @@ if "pagina" not in st.session_state:
 if "week" not in st.session_state:
     st.session_state.week = 43
 
+dagen = {
+    0: "Maandag",
+    1: "Dinsdag",
+    2: "Woensdag",
+    3: "Donderdag",
+    4: "Vrijdag",
+    5: "Zaterdag",
+    6: "Zondag"
+}
 
+vandaag = dagen[datetime.now().weekday()]
 
 
 
@@ -212,7 +224,7 @@ elif st.session_state.pagina == "rooster":
 
     with col1:
         if st.button("📂 Open dienst"):
-            st.session_state.dag = "Maandag"
+            st.session_state.dag = "vandaag"
             st.session_state.pagina = "dagdetail"
             st.rerun()
     with col2:
