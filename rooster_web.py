@@ -234,20 +234,20 @@ elif st.session_state.pagina == "rooster":
 
 elif st.session_state.pagina == "weekselectie":
 
-        st.markdown(
-            "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
-            unsafe_allow_html=True
-        )
-for week in range(43, 53):
+    st.markdown(
+        "<h1 style='text-align:center;color:gold;'>📅 Selecteer week</h1>",
+        unsafe_allow_html=True
+    )
+    for week in range(43, 53):
 
-    if st.button(f"Week {week} - 2026"):
-        st.session_state.week = week
-        st.session_state.pagina = "weekrooster"
-        st.rerun()
-       
-        if st.button("🔙 Terug"):
-            st.session_state.pagina = "rooster"
+        if st.button(f"Week {week} - 2026"):
+            st.session_state.week = week
+            st.session_state.pagina = "weekrooster"
             st.rerun()
+       
+    if st.button("🔙 Terug"):
+        st.session_state.pagina = "rooster"
+        st.rerun()
     
 elif st.session_state.pagina == "weekrooster":
     
