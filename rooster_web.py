@@ -224,7 +224,7 @@ elif st.session_state.pagina == "rooster":
 
     with col1:
         if st.button("📂 Open dienst"):
-            st.session_state.dag = "vandaag"
+            st.session_state.dag = vandaag
             st.session_state.pagina = "dagdetail"
             st.rerun()
     with col2:
@@ -454,32 +454,6 @@ elif st.session_state.pagina == "bijzonderheden":
         if st.button("🔙 Terug"):
             st.session_state.pagina = "rooster"
             st.rerun()
-elif st.session_state.pagina == "bijzonderheden":
-
-    st.markdown(
-        "<h1 style='text-align:center;color:gold;'>📝 Bijzonderheden</h1>",
-        unsafe_allow_html=True
-    )
-
-    st.write("")
-
-    melding = st.text_area(
-        "Voer hier een bijzonderheid in"
-    )
-
-    st.write("")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        if st.button("💾 Opslaan"):
-            st.success("Bijzonderheid opgeslagen")
-
-    with col2:
-        if st.button("🔙 Terug"):
-            st.session_state.pagina = "rooster"
-            st.rerun()
-
 
 
 
