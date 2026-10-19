@@ -376,6 +376,7 @@ elif st.session_state.pagina == "weekrooster":
 
 
 elif st.session_state.pagina == "dagdetail":
+    )
 elif st.session_state.pagina == "bijzonderheden":
 
     st.markdown(
