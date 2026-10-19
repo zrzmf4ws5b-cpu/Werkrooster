@@ -49,6 +49,11 @@ div.stButton > button {
 
 if "pagina" not in st.session_state:
     st.session_state.pagina = "start"
+
+if "week" not in st.session_state:
+    st.session_state.week = 43
+
+
 if st.session_state.pagina == "start":   
     st.markdown(
         "<h1 style='text-align:center;color:gold;'>FlexPlan</h1>",
