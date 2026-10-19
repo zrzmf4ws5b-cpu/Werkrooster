@@ -327,7 +327,7 @@ elif st.session_state.pagina == "weekrooster":
         """, unsafe_allow_html=True)
 
     with col3:
-        st.markdown("""
+        st.markdown(f"""
         <div style="
             background-color:#F39C12;
             color:white;
@@ -336,13 +336,13 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Wo<br><br>
-            14:30<br>
-            22:30
+            {week_starttijd}<br>
+            {week_eindtijd}
         </div>
         """, unsafe_allow_html=True)
 
     with col4:
-        st.markdown("""
+        st.markdown(f"""
         <div style="
             background-color:#E74C3C;
             color:white;
@@ -351,13 +351,13 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Do<br><br>
-            14:30<br>
-            22:30
+            {week_starttijd}<br>
+            {week_eindtijd}
         </div>
         """, unsafe_allow_html=True)
 
     with col5:
-        st.markdown("""
+        st.markdown(f"""
         <div style="
             background-color:#3498DB;
             color:white;
@@ -366,8 +366,8 @@ elif st.session_state.pagina == "weekrooster":
             text-align:center;
             font-weight:bold;">
             Vr<br><br>
-            14:30<br>
-            22:30
+            {week_starttijd}<br>
+            {week_eindtijd}
         </div>
         """, unsafe_allow_html=True)
 
