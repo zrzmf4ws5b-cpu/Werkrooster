@@ -364,12 +364,14 @@ elif st.session_state.pagina == "dagdetail":
     st.write("")
 
     st.markdown(
+        """
     "<div style='background-color:#F39C12;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>👥 Collega's<br><br>
     Jay - 10:00-18:00<br>
     Piento - 12:30-20:30<br>
     Dre - 16:30-23:30<br>
     Borsoe - 16:00-23:30
-    </div>",
+    </div>
+    """,
     unsafe_allow_html=True
     )
     st.write("")
