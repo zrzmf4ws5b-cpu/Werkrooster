@@ -16,7 +16,6 @@ weken = pd.read_excel(
 )
 st.write(Medewerkers)
 st.stop() 
-)
 
 st.set_page_config(
     page_title="FlexPlan",
