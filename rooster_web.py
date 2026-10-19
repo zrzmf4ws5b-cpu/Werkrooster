@@ -181,10 +181,10 @@ elif st.session_state.pagina == "rooster":
             font-size:24px;
             font-weight:bold;">
             📅 Vandaag<br><br>
-    
+            Maandag 19 oktober 2026<br><br>
             
-            🕒 Start: {starttijd}<br> 
-            🕒 Eind: {eindtijd}<br><br>
+            🕒 Start: {starttijd} 
+            🕒 Eind: {eindtijd}
             📍 Amstel 1
             👥 4 collega's
         </div>
