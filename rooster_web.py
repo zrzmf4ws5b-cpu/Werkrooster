@@ -16,6 +16,9 @@ weken = pd.read_excel(
 )
 purcy_rij = medewerkers.loc[
     medewerkers["Naam"] == "Purcy"
+positie = int(purcy_rij.iloc[0]["Positie"])
+
+st.write("Positie:", positie)
 ]
 
 st.set_page_config(
