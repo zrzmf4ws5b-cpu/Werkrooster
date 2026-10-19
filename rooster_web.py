@@ -15,7 +15,7 @@ weken = pd.read_excel(
     sheet_name="Weken"
 )
 purcy_rij = medewerkers.loc[
-    medewerkers["Naam"] == "Purcy"
+    medewerkers["Naam"] == st.session_state.gebruiker 
 ]
 positie = int(purcy_rij.iloc[0]["Positie"])
 week_rij = weken.loc[
