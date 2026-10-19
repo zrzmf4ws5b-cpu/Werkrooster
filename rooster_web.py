@@ -14,8 +14,8 @@ weken = pd.read_excel(
     "rooster.xlsx",
     sheet_name="Weken"
 )
-purcy_rij = medewerkers.loc[
-    medewerkers["Naam"] == "Purcy" 
+Medewerker_rij = medewerkers.loc[
+    medewerkers["Naam"] == "Medewerker" 
 ]
 positie = int(purcy_rij.iloc[0]["Positie"])
 
