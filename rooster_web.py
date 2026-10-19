@@ -19,9 +19,26 @@ purcy_rij = medewerkers.loc[
 ]
 positie = int(purcy_rij.iloc[0]["Positie"])
 
-dienst_rij = diensten.loc[
-    diensten["Positie"] == positie
+week_rij = weken.loc[
+    weken["Week"] == st.session_state.week
 ]
+
+verschuiving = int(
+    week_rij.iloc[0]["Verschuiving"]
+)
+
+nieuwe_positie = positie + verschuiving
+
+while nieuwe_positie > 5:
+    nieuwe_positie = nieuwe_positie - 5
+
+
+
+dienst_rij = diensten.loc[
+    diensten["Positie"] == nieuwe_positie
+]
+
+
 dienst = dienst_rij.iloc[0]["Dienst"]
 starttijd, eindtijd = dienst.split("-")
 st.set_page_config(
