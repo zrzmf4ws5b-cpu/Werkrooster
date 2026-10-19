@@ -259,7 +259,7 @@ elif st.session_state.pagina == "weekselectie":
             st.rerun()
     
 elif st.session_state.pagina == "weekrooster":
-        st.write("Gekozen week:", st.session_state.week)
+    st.write("Gekozen week:", st.session_state.week)
     
     week_rij = weken.loc[
         weken["Week"] == st.session_state.week
