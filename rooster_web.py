@@ -449,36 +449,36 @@ elif st.session_state.pagina == "bijzonderheden":
     with col1:
         if st.button("💾 Opslaan"):
             bijzonderheden = pd.read_excel(
-            "rooster.xlsx",
-            sheet_name="Bijzonderheden"
-        )
-
-        nieuwe_rij = pd.DataFrame([{
-            "Dag": vandaag,
-            "Gebruiker": st.session_state.gebruiker,
-            "Meldingen": melding,
-            "Datum": datetime.now().strftime("%d-%m-%Y")
-        }])
-
-        bijzonderheden = pd.concat(
-            [bijzonderheden, nieuwe_rij],
-            ignore_index=True
-        )
-
-        with pd.ExcelWriter(
-            "rooster.xlsx",
-            engine="openpyxl",
-            mode="a",
-            if_sheet_exists="replace"
-        ) as writer:
-
-            bijzonderheden.to_excel(
-                writer,
-                sheet_name="Bijzonderheden",
-                index=False
+                "rooster.xlsx",
+                sheet_name="Bijzonderheden"
             )
 
-        st.success("Bijzonderheid opgeslagen")
+            nieuwe_rij = pd.DataFrame([{
+                "Dag": vandaag,
+                "Gebruiker": st.session_state.gebruiker,
+                "Meldingen": melding,
+                "Datum": datetime.now().strftime("%d-%m-%Y")
+            }])
+
+            bijzonderheden = pd.concat(
+                [bijzonderheden, nieuwe_rij],
+                ignore_index=True
+            )
+
+            with pd.ExcelWriter(
+                "rooster.xlsx",
+                engine="openpyxl",
+                mode="a",
+                if_sheet_exists="replace"
+            ) as writer:
+
+                bijzonderheden.to_excel(
+                    writer,
+                    sheet_name="Bijzonderheden",
+                    index=False
+                )
+
+            st.success("Bijzonderheid opgeslagen")
     with col2:
         if st.button("🔙 Terug"):
             st.session_state.pagina = "rooster"
