@@ -21,14 +21,9 @@ positie = int(purcy_rij.iloc[0]["Positie"])
 dienst_rij = diensten.loc[
     diensten["Positie"] == positie
 ]
-st.write(dienst_rij)
 
 
 dienst = dienst_rij.iloc[0]["Dienst"]
-
-st.write("Dienst:", dienst)
-
-st.write("Positie:", positie)
 
 st.set_page_config(
     page_title="FlexPlan",
