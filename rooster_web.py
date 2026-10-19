@@ -18,6 +18,14 @@ purcy_rij = medewerkers.loc[
     medewerkers["Naam"] == "Purcy"
 ]
 positie = int(purcy_rij.iloc[0]["Positie"])
+week_rij = weken.loc[
+    weken["Week"] == st.session_state.week
+]
+
+verschuiving = int(
+    week_rij.iloc[0]["Verschuiving"]
+)
+
 dienst_rij = diensten.loc[
     diensten["Positie"] == positie
 ]
