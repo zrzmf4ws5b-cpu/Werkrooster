@@ -296,7 +296,7 @@ elif st.session_state.pagina == "weekrooster":
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        st.markdown("""
+        st.markdown(f"""
         <div style="
             background-color:#4A86E8;
             color:white;
