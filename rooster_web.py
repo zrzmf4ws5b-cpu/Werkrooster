@@ -349,16 +349,16 @@ elif st.session_state.pagina == "dagdetail":
         f"<h1 style='text-align:center;color:gold;'>📅 {st.session_state.dag}</h1>",
         unsafe_allow_html=True
     )
-
     st.markdown(
-    "<div style='background-color:#4A86E8;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>🕒 Dienst<br>06:30 - 15:00</div>",
-    unsafe_allow_html=True
+        f"<div style='background-color:#4A86E8;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>🕒 Dienst<br>{starttijd} - {eindtijd}</div>",
+        unsafe_allow_html=True
+   
     )
 
     st.write("")
 
     st.markdown(
-    "<div style='background-color:#2ECC71;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>📍 Locatie<br>Amstel 1 - Waterlooplein</div>",
+    "<div style='background-color:#2ECC71;color:white;padding:20px;border-radius:10px;font-size:24px;font-weight:bold;'>📍 Locatie<br>Amstel 1 - Waterlooplein - 6</div>",
     unsafe_allow_html=True
     )
     st.write("")
