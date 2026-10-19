@@ -57,7 +57,7 @@ label {
 st.markdown("""
 <style>
 div.stButton > button {
-    background-color: gold;
+    background-color: blue;
     color: black;
     font-size: 14px;
     font-weight: bold;
