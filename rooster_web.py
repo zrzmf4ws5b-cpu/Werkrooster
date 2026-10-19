@@ -17,12 +17,7 @@ weken = pd.read_excel(
 purcy_rij = medewerkers.loc[
     medewerkers["Naam"] == "Purcy" 
 ]
-positie = int(purcy_rij.iloc[0]["Positie"])
-
-
-dienst_rij = diensten.loc[
-    diensten["Positie"] == nieuwe_positie
-]
+positie = int(purcy_rij.iloc[0]["Positie"]
 
 
 dienst = dienst_rij.iloc[0]["Dienst"]
