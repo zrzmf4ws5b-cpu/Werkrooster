@@ -261,6 +261,17 @@ elif st.session_state.pagina == "weekselectie":
 elif st.session_state.pagina == "weekrooster":
     st.write("Gekozen week:", st.session_state.week)
     
+    week_rij = weken.loc[
+        weken["Week"] == st.session_state.week
+]
+
+verschuiving = int(
+    week_rij.iloc[0]["Verschuiving"]
+)
+
+st.write("Verschuiving:", verschuiving)
+    
+    
     st.markdown(
         "<h1 style='text-align:center;color:gold;'>📅 Weekrooster</h1>",
         unsafe_allow_html=True
