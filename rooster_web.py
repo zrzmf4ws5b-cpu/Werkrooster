@@ -26,8 +26,13 @@ verschuiving = int(
     week_rij.iloc[0]["Verschuiving"]
 )
 
+nieuwe_positie = positie + verschuiving
+
+if nieuwe_positie > 5:
+    nieuwe_positie = nieuwe_positie - 5
+
 dienst_rij = diensten.loc[
-    diensten["Positie"] == positie
+    diensten["Positie"] == nieuwe_positie
 ]
 
 
