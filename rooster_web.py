@@ -273,9 +273,15 @@ elif st.session_state.pagina == "weekrooster":
 
     while nieuwe_positie > 5:
         nieuwe_positie = nieuwe_positie - 5
-    st.write("Positie:", positie)
-    st.write("Verschuiving:", verschuiving)
-    st.write("Nieuwe positie:", nieuwe_positie)
+
+    dienst_rij = diensten.loc[
+        diensten["Positie"] == nieuwe_positie
+    ]
+
+    dienst = dienst_rij.iloc[0]["Dienst"]
+
+    week_starttijd, week_eindtijd = dienst.split("-")
+
     
     st.markdown(
         "<h1 style='text-align:center;color:gold;'>📅 Weekrooster</h1>",
