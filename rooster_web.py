@@ -170,7 +170,7 @@ elif st.session_state.pagina == "welkom":
         if st.button("💼 Vacatures"):
             st.session_state.pagina = "vacatures"
             st.rerun()
-        if st.button("🚪 Afmelden"):
+        if st.button("🔙 Terug"):
             st.session_state.pagina = "start"
             st.rerun()
 elif st.session_state.pagina == "rooster":
