@@ -20,14 +20,7 @@ if "gebruiker" in st.session_state:
 
     medewerker_rij = medewerkers.loc[
         medewerkers["Naam"] == st.session_state.gebruiker
-    ]
-
-    
-
-
-
-
-
+]
 
 st.set_page_config(
     page_title="FlexPlan",
