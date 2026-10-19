@@ -200,7 +200,7 @@ elif st.session_state.pagina == "rooster":
 
     with col1:
         if st.button("📂 Open dienst"):
-            st.session_state.dag = "Vrijdag"
+            st.session_state.dag = "Maandag"
             st.session_state.pagina = "dagdetail"
             st.rerun()
 
