@@ -19,7 +19,9 @@ purcy_rij = medewerkers.loc[
 ]
 positie = int(purcy_rij.iloc[0]["Positie"]
 
-
+dienst_rij = diensten.loc[
+    diensten["Positie"] == positie
+]
 dienst = dienst_rij.iloc[0]["Dienst"]
 starttijd, eindtijd = dienst.split("-")
 st.set_page_config(
