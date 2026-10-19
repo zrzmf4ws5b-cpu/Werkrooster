@@ -280,7 +280,7 @@ elif st.session_state.pagina == "weekrooster":
     )
 
     st.markdown(
-        f"<h3 style='text-align:center;color:white;'>week {st.session_state.week}</h3>",
+        f"<h3 style='text-align:center;color:white;'>week {st.session_state.week} - 2026</h3>",
         unsafe_allow_html=True
     )
 
